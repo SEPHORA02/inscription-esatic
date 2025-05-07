@@ -1,0 +1,458 @@
+/* static/css/style.css */
+
+/* Reset et styles de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Barre de navigation */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.logo a {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0e7bc0;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-link {
+    color: #333;
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+
+.help-center {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #333;
+}
+
+.icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    background-color: #0e7bc0;
+    color: white;
+    border-radius: 50%;
+}
+
+.login-button {
+    display: flex;
+    flex-direction: column;
+    color: #0e7bc0;
+    font-weight: 600;
+}
+
+.login-subtext {
+    font-size: 12px;
+    font-weight: normal;
+}
+
+/* Hero section - comme Doctolib */
+.hero {
+    display: flex;
+    background-color: #0e7bc0;
+    color: white;
+    padding: 60px 30px;
+    position: relative;
+    min-height: 500px;
+}
+
+.hero-content {
+    width: 60%;
+    z-index: 2;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    max-width: 600px;
+}
+
+.search-bar {
+    display: flex;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+}
+
+.search-input, .search-location {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    padding: 0 15px;
+    border-right: 1px solid #eee;
+}
+
+.search-icon, .location-icon {
+    margin-right: 10px;
+    color: #777;
+}
+
+.search-bar input {
+    border: none;
+    padding: 15px 0;
+    width: 100%;
+    font-size: 16px;
+    color: #333;
+}
+
+.search-bar input:focus {
+    outline: none;
+}
+
+.search-button {
+    background-color: #0a436b;
+    color: white;
+    border: none;
+    padding: 0 25px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.search-button:hover {
+    background-color: #072f4e;
+}
+
+.hero-image {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 40%;
+    height: 100%;
+    background-image: url('/static/images/concours-MME-ESATIC_01.jpeg');
+    background-size: contain;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.hero-image img {
+    max-height: 80vh;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+
+/* Section des fonctionnalités */
+.features {
+    padding: 60px 0;
+    background-color: #f8f9fa;
+}
+
+.features h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.feature-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-icon {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.feature-card h3 {
+    color: #0e7bc0;
+    margin-bottom: 15px;
+}
+
+.feature-link {
+    display: inline-block;
+    margin-top: 15px;
+    color: #0e7bc0;
+    font-weight: 600;
+}
+
+/* Footer */
+.footer {
+    background-color: #0a436b;
+    color: white;
+    padding: 60px 0 30px;
+}
+
+.footer-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.footer-column h4 {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: #ccc;
+    transition: color 0.2s ease;
+}
+
+.footer-column ul li a:hover {
+    color: white;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 14px;
+    color: #ccc;
+}
+.feature-link {
+    display: inline-block;
+    margin-top: 10px;
+    margin-right: 10px;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+/* Style pour "En savoir" */
+.feature-link:first-of-type {
+    background-color: transparent;
+    color: #0e7bc0;
+    border: 2px solid #0e7bc0;
+}
+
+.feature-link:first-of-type:hover {
+    background-color: #0e7bc0;
+    color: white;
+}
+
+/* Style pour "S'inscrire" */
+.feature-link:last-of-type {
+    background-color: #0e7bc0;
+    color: white;
+    border: 2px solid transparent;
+}
+
+.feature-link:last-of-type:hover {
+    background-color: #072f4e;
+}
+
+/* Formulaires (repris de votre CSS existant) */
+input[type="text"], input[type="email"], input[type="file"], select, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 12px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: white;
+    color: #333;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #0e7bc0;
+    outline: none;
+    box-shadow: 0 0 8px rgba(14, 123, 192, 0.3);
+}
+
+button, input[type="submit"] {
+    background-color: #0e7bc0;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+button:hover, input[type="submit"]:hover {
+    background-color: #0a436b;
+}
+
+/* Message de succès */
+.success-message {
+    background-color: #e9f7ef;
+    border-left: 5px solid #2ecc71;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 6px;
+    color: #27ae60;
+    font-weight: bold;
+}
+
+.form-container {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.form-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+}
+
+
+/* Logo en haut à gauche */
+.form-header {
+    margin: 0;
+}
+
+.form-header img {
+    height: 50px;
+    margin: 0;
+}
+
+/* Contenu à droite */
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Liens principaux */
+.nav-link,
+.login-button {
+    text-decoration: none;
+    color: #0e7bc0; /* bleu ESATIC */
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+/* Survol */
+.nav-link:hover,
+.login-button:hover {
+    color: #005b99;
+}
+
+/* Texte sous "Se connecter" */
+.login-subtext {
+    font-size: 12px;
+    color: rgba(14, 123, 192, 0.6); /* bleu avec opacité */
+    transition: opacity 0.3s ease;
+}
+
+/* Optionnel : effet au survol de la zone login */
+.login-button:hover .login-subtext {
+    opacity: 1;
+}
+
+
+
+/* Responsive */
+@media (max-width: 992px) {
+    .hero {
+        flex-direction: column;
+    }
+    
+    .hero-content {
+        width: 100%;
+    }
+    
+    .hero-image {
+        position: relative;
+        width: 100%;
+        height: 300px;
+        margin-top: 40px;
+    }
+    
+    .search-bar {
+        flex-direction: column;
+    }
+    
+    .search-input, .search-location {
+        border-right: none;
+        border-bottom: 1px solid #eee;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 15px;
+    }
+    
+    .nav-right {
+        margin-top: 15px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .hero h1 {
+        font-size: 28px;
+    }
+}

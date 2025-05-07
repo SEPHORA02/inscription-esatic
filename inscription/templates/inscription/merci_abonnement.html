@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Merci pour votre abonnement</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <style>
+        body {
+            background: #f5faff;
+            font-family: 'Inter', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .confirmation-box {
+            background: white;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            text-align: center;
+            max-width: 500px;
+        }
+        .confirmation-box h1 {
+            color: #0e7bc0;
+            margin-bottom: 20px;
+        }
+        .confirmation-box p {
+            font-size: 16px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="confirmation-box">
+        <h1>Merci {{ nom }} !</h1>
+        <p>Vous êtes désormais abonné(e) pour suivre toutes les actualités de l'ESATIC.</p>
+    </div>
+</body>
+</html>

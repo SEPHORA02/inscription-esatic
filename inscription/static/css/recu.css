@@ -1,0 +1,94 @@
+/* Import de police (facultatif mais conseillé) */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f5f9fc;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 40px 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 500px;
+    width: 90%;
+    animation: fadeIn 1s ease-in-out;
+}
+
+h2 {
+    color: #0e7bc0;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+p {
+    color: #333;
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+/* Style du bouton */
+button {
+    margin-top: 25px;
+    padding: 12px 25px;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #0e7bc0;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #005b99;
+    transform: scale(1.05);
+}
+
+/* Animation simple */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo img {
+    height: 70px;
+}
+
+.signature {
+    margin-top: 40px;
+    font-size: 14px;
+    color: #555;
+    border-top: 1px dashed #ccc;
+    padding-top: 20px;
+    text-align: center;
+    opacity: 0.8;
+}
+
+.signature-code {
+    font-family: 'Courier New', Courier, monospace;
+    color: #0e7bc0;
+    font-size: 13px;
+    margin-top: 5px;
+}
+

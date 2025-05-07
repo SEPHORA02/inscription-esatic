@@ -1,0 +1,120 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/concours.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="concours-detail">
+    <div class="concours-header">
+        <div class="concours-icon">🎓</div>
+        <h1>Concours Ingénieur</h1>
+        <p>Pour les titulaires d'un BAC+2 minimum</p>
+    </div>
+
+    <div class="concours-container">
+        <h2 class="section-title">À propos du concours</h2>
+        <p>Le concours d'ingénieur est destiné aux étudiants ayant validé un diplôme de niveau BAC+2 minimum (BTS, DUT, Licence 2, Classes préparatoires) souhaitant poursuivre leur formation dans une école d'ingénieur.</p>
+        
+        <h2 class="section-title">Conditions d'admission</h2>
+        <ul class="detail-list">
+            <li>Être titulaire d'un diplôme BAC+2 minimum dans un domaine scientifique ou technique</li>
+            <li>Avoir moins de 30 ans au 1er janvier de l'année du concours</li>
+            <li>Posséder un bon niveau en mathématiques et sciences physiques</li>
+            <li>Maîtriser le français (niveau B2 minimum pour les candidats étrangers)</li>
+        </ul>
+
+        <h2 class="section-title">Épreuves du concours</h2>
+        <ul class="detail-list">
+            <li>Épreuves écrites : Mathématiques (4h), Physique (3h), Informatique (2h)</li>
+            <li>Épreuve de langue : Anglais (2h)</li>
+            <li>Épreuves orales : Entretien de motivation, exposé technique, analyse de documents</li>
+        </ul>
+
+        <h2 class="section-title">Calendrier</h2>
+        <div class="timeline">
+            <div class="timeline-container left">
+                <div class="timeline-content">
+                    <div class="timeline-date">15 janvier - 15 mars</div>
+                    <p>Période d'inscription au concours</p>
+                </div>
+            </div>
+            <div class="timeline-container right">
+                <div class="timeline-content">
+                    <div class="timeline-date">10 - 12 avril</div>
+                    <p>Épreuves écrites</p>
+                </div>
+            </div>
+            <div class="timeline-container left">
+                <div class="timeline-content">
+                    <div class="timeline-date">25 avril</div>
+                    <p>Publication des résultats d'admissibilité</p>
+                </div>
+            </div>
+            <div class="timeline-container right">
+                <div class="timeline-content">
+                    <div class="timeline-date">15 - 25 mai</div>
+                    <p>Épreuves orales</p>
+                </div>
+            </div>
+            <div class="timeline-container left">
+                <div class="timeline-content">
+                    <div class="timeline-date">10 juin</div>
+                    <p>Publication des résultats d'admission</p>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="section-title">Frais d'inscription</h2>
+        <p>Les frais d'inscription au concours s'élèvent à 35milles. Ces frais sont réduits à 25milles pour les boursiers (sur présentation d'un justificatif).</p>
+
+        <div class="faq-section">
+            <h2 class="section-title">Questions fréquentes</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question">Puis-je m'inscrire si je suis en dernière année de BTS/DUT ?</div>
+                <div class="faq-answer">
+                    Oui, vous pouvez vous inscrire si vous êtes en dernière année de formation. Votre admission définitive sera conditionnée à l'obtention de votre diplôme avant la rentrée universitaire.
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">Y a-t-il des quotas pour les différentes filières ?</div>
+                <div class="faq-answer">
+                    Non, il n'y a pas de quotas prédéfinis pour les différentes filières d'origine. Tous les candidats sont évalués selon les mêmes critères quelle que soit leur formation d'origine.
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">Est-il possible d'obtenir des annales des concours précédents ?</div>
+                <div class="faq-answer">
+                    Oui, des annales des trois dernières années sont disponibles dans la section "Ressources" de notre site internet. Vous pouvez également vous procurer un recueil complet auprès de notre secrétariat.
+                </div>
+            </div>
+        </div>
+
+        <div class="action-buttons">
+            <a href="{% url 'inscrire' %}" class="btn-primary">S'inscrire au concours</a>
+            <a href="#" class="btn-secondary">Télécharger la brochure</a>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Script pour les FAQs
+    document.addEventListener('DOMContentLoaded', function() {
+        const faqQuestions = document.querySelectorAll('.faq-question');
+        
+        faqQuestions.forEach(question => {
+            question.addEventListener('click', function() {
+                const answer = this.nextElementSibling;
+                
+                // Toggle active class
+                this.classList.toggle('active');
+                answer.classList.toggle('active');
+            });
+        });
+    });
+</script>
+{% endblock %}

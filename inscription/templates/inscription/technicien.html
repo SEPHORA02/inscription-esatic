@@ -1,0 +1,128 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/concours.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="concours-detail">
+    <div class="concours-header">
+        <div class="concours-icon">💻</div>
+        <h1>Concours Technicien</h1>
+        <p>Pour les titulaires du BAC</p>
+    </div>
+
+    <div class="concours-container">
+        <h2 class="section-title">À propos du concours</h2>
+        <p>Le concours de technicien est ouvert aux bacheliers souhaitant poursuivre leurs études dans le domaine technique. Cette formation vous permettra d'acquérir des compétences pratiques et théoriques pour devenir un professionnel qualifié.</p>
+        
+        <h2 class="section-title">Conditions d'admission</h2>
+        <ul class="detail-list">
+            <li>Être titulaire du baccalauréat (toutes séries, avec une préférence pour les séries technologiques et scientifiques)</li>
+            <li>Avoir moins de 22 ans au 1er janvier de l'année du concours</li>
+            <li>Posséder des compétences en mathématiques et en sciences physiques</li>
+            <li>Être motivé par les domaines techniques et technologiques</li>
+        </ul>
+
+        <h2 class="section-title">Épreuves du concours</h2>
+        <ul class="detail-list">
+            <li>Épreuves écrites : Mathématiques (3h), Physique appliquée (2h), Français (2h)</li>
+            <li>Épreuve technique : Réalisation d'un projet technique simple (3h)</li>
+            <li>Entretien de motivation : Discussion avec le jury sur votre parcours et vos motivations (20 min)</li>
+        </ul>
+
+        <h2 class="section-title">Spécialités proposées</h2>
+        <ul class="detail-list">
+            <li>Informatique et réseaux</li>
+            <li>Électronique et systèmes numériques</li>
+            <li> Systèmes Reseaux Informatiques et télécommunications</li>
+            
+        </ul>
+
+        <h2 class="section-title">Calendrier</h2>
+        <div class="timeline">
+            <div class="timeline-container left">
+                <div class="timeline-content">
+                    <div class="timeline-date">1er février - 31 mars</div>
+                    <p>Période d'inscription au concours</p>
+                </div>
+            </div>
+            <div class="timeline-container right">
+                <div class="timeline-content">
+                    <div class="timeline-date">5 - 6 mai</div>
+                    <p>Épreuves écrites</p>
+                </div>
+            </div>
+            <div class="timeline-container left">
+                <div class="timeline-content">
+                    <div class="timeline-date">20 mai</div>
+                    <p>Publication des résultats d'admissibilité</p>
+                </div>
+            </div>
+            <div class="timeline-container right">
+                <div class="timeline-content">
+                    <div class="timeline-date">1er - 10 juin</div>
+                    <p>Épreuves pratiques et entretiens</p>
+                </div>
+            </div>
+            <div class="timeline-container left">
+                <div class="timeline-content">
+                    <div class="timeline-date">25 juin</div>
+                    <p>Publication des résultats d'admission</p>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="section-title">Frais d'inscription</h2>
+        <p>Les frais d'inscription au concours s'élèvent à 35milles. Ces frais sont réduits à 25milles pour les boursiers (sur présentation d'un justificatif).</p>
+
+        <div class="faq-section">
+            <h2 class="section-title">Questions fréquentes</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question">Le concours est-il ouvert aux bacheliers de toutes filières ?</div>
+                <div class="faq-answer">
+                    Oui, le concours est ouvert à tous les bacheliers. Toutefois, les candidats issus des filières scientifiques et technologiques ont généralement plus de facilité à réussir les épreuves techniques.
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">Existe-t-il des possibilités de poursuivre en cycle ingénieur après la formation de technicien ?</div>
+                <div class="faq-answer">
+                    Absolument. Les meilleurs étudiants peuvent, après l'obtention de leur diplôme de technicien, intégrer directement la formation d'ingénieur sous certaines conditions. Un concours interne est organisé chaque année à cet effet.
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">Y a-t-il une préparation spécifique recommandée pour le concours ?</div>
+                <div class="faq-answer">
+                    Nous proposons des sessions de préparation en ligne et des stages intensifs deux mois avant les épreuves. Vous pouvez également consulter les annales disponibles sur notre site internet pour vous familiariser avec le format des épreuves.
+                </div>
+            </div>
+        </div>
+
+        <div class="action-buttons">
+            <a href="{% url 'inscrire' %}" class="btn-primary">S'inscrire au concours</a>
+            <a href="#" class="btn-secondary">Télécharger la brochure</a>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Script pour les FAQs
+    document.addEventListener('DOMContentLoaded', function() {
+        const faqQuestions = document.querySelectorAll('.faq-question');
+        
+        faqQuestions.forEach(question => {
+            question.addEventListener('click', function() {
+                const answer = this.nextElementSibling;
+                
+                // Toggle active class
+                this.classList.toggle('active');
+                answer.classList.toggle('active');
+            });
+        });
+    });
+</script>
+{% endblock %}

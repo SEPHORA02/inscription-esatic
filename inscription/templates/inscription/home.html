@@ -1,0 +1,114 @@
+<!-- templates/inscription/accueil.html -->
+{% load static %}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>ESATIC - Plateforme d'inscription</title>
+</head>
+<body>
+    <header class="form-container">
+        <div class="form-header">
+            <img src="{% static 'images/presentation_esatic.jpg' %}" alt="Logo ESATIC">
+        </div>
+        <div class="nav-right">
+            <a href="#" class="nav-link">Vous êtes étudiant ?</a>
+            <div class="help-center">
+                <span class="icon">🎓</span>
+                <span>ADMISSION</span>
+            </div>
+            <a href="{% url 'abonnement' %}" class="login-button">
+                S'abonner pour ne rien rater 
+                <div class="login-subtext">Suivi des sessions académiques</div>
+            </a>
+        </div>
+    </header>
+    
+    <main class="hero">
+        <div class="hero-content">
+            <h1>Inscrivez-vous aux concours ESATIC</h1>
+            
+            <div class="search-bar">
+                <div class="search-input">
+                    <span class="search-icon">🔍</span>
+                    <input type="text" placeholder="Filière, spécialité, concours...">
+                </div>
+                <div class="search-location">
+                    <span class="location-icon">📍</span>
+                    <input type="text" placeholder="Où ?">
+                </div>
+                <button class="search-button">Rechercher <span>→</span></button>
+            </div>
+        </div>
+        <div class="hero-image">
+            
+
+        </div>
+    </main>
+
+    <section class="features">
+        <div class="container">
+            <h2>Nos concours disponibles</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🎓</div>
+                    <h3>Concours Ingénieur</h3>
+                    <p>Pour les titulaires d'un BAC+2 minimum</p>
+                    <a href="{% url 'ingenieur' %}" class="feature-link">En savoir</a>
+                    <a href="{% url 'inscrire' %}" class="feature-link">S'inscrire</a>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💻</div>
+                    <h3>Concours Technicien</h3>
+                    <p>Pour les titulaires du BAC</p>
+                    <a href="{% url 'technicien' %}" class="feature-link">En savoir</a>
+                    <a href="{% url 'inscrire' %}" class="feature-link">S'inscrire</a>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔬</div>
+                    <h3>Concours Master</h3>
+                    <p>Pour les titulaires d'un BAC+3</p>
+                    <a href="{% url 'master' %}" class="feature-link">En savoir</a>
+                    <a href="{% url 'inscrire' %}" class="feature-link">S'inscrire</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>À propos d'ESATIC</h4>
+                    <ul>
+                        <li><a href="#">Qui sommes-nous</a></li>
+                        <li><a href="#">Nos formations</a></li>
+                        <li><a href="#">Nos campus</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Informations utiles</h4>
+                    <ul>
+                        <li><a href="#">Calendrier des concours</a></li>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="#">Nous contacter</a></li>
+                        <li><a href="#">Support technique</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; {% now "Y" %} ESATIC - Tous droits réservés</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

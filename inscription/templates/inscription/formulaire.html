@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Inscription Concours ESATIC</title>
+    <link rel="stylesheet" href="{% static 'css/formulaire.css' %}">
+</head>
+<body>
+    <div class="form-container">
+        <div class="form-header">
+            <img src="{% static 'images/presentation_esatic.jpg' %}" alt="Logo ESATIC">
+            <h2>Inscription au Concours ESATIC</h2>
+            <p>Remplissez le formulaire ci-dessous pour postuler.</p>
+        </div>
+
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div class="form-grid">
+                {% for field in form %}
+                <div class="form-group">
+                    <label for="{{ field.id_for_label }}">
+                        <span class="icon">📌</span> {{ field.label }}
+                    </label>
+                    {{ field }}
+                    {% if field.help_text %}
+                        <small>{{ field.help_text }}</small>
+                    {% endif %}
+                    {% for error in field.errors %}
+                        <div class="error">{{ error }}</div>
+                    {% endfor %}
+                </div>
+                {% endfor %}
+            </div>
+            <button type="submit">S'inscrire</button>
+        </form>
+    </div>
+</body>
+</html>

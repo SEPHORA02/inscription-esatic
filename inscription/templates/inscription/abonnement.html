@@ -1,0 +1,62 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S'abonner à notre page</title>
+    <link rel="stylesheet" href="{% static 'css/abonnement.css' %}">
+</head>
+<body>
+
+    <div class="container">
+        <h2>S'abonner pour ne rien rater</h2>
+        <p>Suivi des sessions académiques</p>
+
+        <form method="POST">
+            {% csrf_token %}
+            <div class="form-row">
+                <div class="input-group">
+                    <label for="email">Votre Email</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="nom">Votre Nom</label>
+                    <input type="text" name="nom" id="nom" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="input-group">
+                    <label for="prenoms">Vos Prénoms</label>
+                    <input type="text" name="prenoms" id="prenoms" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="etablissement">Établissement</label>
+                    <input type="text" name="etablissement" id="etablissement" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="input-group">
+                    <label for="niveau">Niveau d'Études</label>
+                    <select name="niveau" id="niveau" required>
+                        <option value="Licence">Licence</option>
+                        <option value="Master">Master</option>
+                        <option value="Doctorat">Doctorat</option>
+                    </select>
+                </div>
+            </div>
+
+            <input type="submit" value="S'abonner">
+        </form>
+
+        <div class="login-subtext">
+            <a href="#" class="login-button">Rejoindre notre communauté</a>
+        </div>
+    </div>
+
+</body>
+</html>
