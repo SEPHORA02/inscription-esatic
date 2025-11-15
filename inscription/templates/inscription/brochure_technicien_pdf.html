@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Brochure Concours Technicien - ESATIC</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 2cm;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .header {
+            text-align: center;
+            padding: 30px 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            margin: -2cm -2cm 2cm -2cm;
+            padding: 3cm 2cm 2cm 2cm;
+        }
+        
+        .header h1 {
+            font-size: 36px;
+            margin: 0 0 10px 0;
+        }
+        
+        .header p {
+            font-size: 18px;
+            margin: 0;
+        }
+        
+        h2 {
+            color: #667eea;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+            margin-top: 30px;
+            font-size: 24px;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+        }
+        
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        
+        ul li {
+            padding: 10px 0 10px 30px;
+            position: relative;
+        }
+        
+        ul li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #667eea;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        
+        .timeline-item {
+            padding: 15px;
+            margin: 10px 0;
+            background: #f8f9fa;
+            border-left: 4px solid #667eea;
+        }
+        
+        .timeline-date {
+            font-weight: bold;
+            color: #667eea;
+            font-size: 16px;
+        }
+        
+        .faq-item {
+            margin: 20px 0;
+            page-break-inside: avoid;
+        }
+        
+        .faq-question {
+            font-weight: bold;
+            color: #764ba2;
+            font-size: 16px;
+            margin-bottom: 8px;
+        }
+        
+        .faq-answer {
+            padding-left: 20px;
+            color: #555;
+        }
+        
+        .highlight-box {
+            background: #fff3cd;
+            border: 2px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        
+        .footer {
+            margin-top: 50px;
+            text-align: center;
+            font-size: 12px;
+            color: #666;
+            border-top: 1px solid #ddd;
+            padding-top: 20px;
+        }
+        
+        .contact-info {
+            background: #e3f2fd;
+            padding: 20px;
+            margin: 30px 0;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>💻 CONCOURS TECHNICIEN</h1>
+        <p>École Supérieure Africaine des TIC (ESATIC)</p>
+        <p style="font-size: 16px; margin-top: 10px;">Pour les titulaires du BAC</p>
+    </div>
+
+    <div class="section">
+        <h2>À propos du concours</h2>
+        <p>Le concours de technicien est ouvert aux bacheliers souhaitant poursuivre leurs études dans le domaine technique. Cette formation vous permettra d'acquérir des compétences pratiques et théoriques pour devenir un professionnel qualifié.</p>
+    </div>
+
+    <div class="section">
+        <h2>Conditions d'admission</h2>
+        <ul>
+            <li>Être titulaire du baccalauréat (toutes séries, avec une préférence pour les séries technologiques et scientifiques)</li>
+            <li>Avoir moins de 22 ans au 1er janvier de l'année du concours</li>
+            <li>Posséder des compétences en mathématiques et en sciences physiques</li>
+            <li>Être motivé par les domaines techniques et technologiques</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Épreuves du concours</h2>
+        <ul>
+            <li><strong>Épreuves écrites :</strong> Mathématiques (3h), Physique appliquée (2h), Français (2h)</li>
+            <li><strong>Épreuve technique :</strong> Réalisation d'un projet technique simple (3h)</li>
+            <li><strong>Entretien de motivation :</strong> Discussion avec le jury sur votre parcours et vos motivations (20 min)</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Spécialités proposées</h2>
+        <ul>
+            <li>Informatique et réseaux</li>
+            <li>Électronique et systèmes numériques</li>
+            <li>Systèmes Réseaux Informatiques et télécommunications</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Calendrier</h2>
+        <div class="timeline-item">
+            <div class="timeline-date">1er février - 31 mars</div>
+            <p>Période d'inscription au concours</p>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-date">5 - 6 mai</div>
+            <p>Épreuves écrites</p>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-date">20 mai</div>
+            <p>Publication des résultats d'admissibilité</p>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-date">1er - 10 juin</div>
+            <p>Épreuves pratiques et entretiens</p>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-date">25 juin</div>
+            <p>Publication des résultats d'admission</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Frais d'inscription</h2>
+        <div class="highlight-box">
+            <p><strong>Tarif normal :</strong> 35 000 FCFA</p>
+            <p><strong>Tarif boursiers :</strong> 25 000 FCFA (sur présentation d'un justificatif)</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Questions fréquentes</h2>
+        
+        <div class="faq-item">
+            <div class="faq-question">Q: Le concours est-il ouvert aux bacheliers de toutes filières ?</div>
+            <div class="faq-answer">
+                R: Oui, le concours est ouvert à tous les bacheliers. Toutefois, les candidats issus des filières scientifiques et technologiques ont généralement plus de facilité à réussir les épreuves techniques.
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question">Q: Existe-t-il des possibilités de poursuivre en cycle ingénieur après la formation de technicien ?</div>
+            <div class="faq-answer">
+                R: Absolument. Les meilleurs étudiants peuvent, après l'obtention de leur diplôme de technicien, intégrer directement la formation d'ingénieur sous certaines conditions. Un concours interne est organisé chaque année à cet effet.
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question">Q: Y a-t-il une préparation spécifique recommandée pour le concours ?</div>
+            <div class="faq-answer">
+                R: Nous proposons des sessions de préparation en ligne et des stages intensifs deux mois avant les épreuves. Vous pouvez également consulter les annales disponibles sur notre site internet pour vous familiariser avec le format des épreuves.
+            </div>
+        </div>
+    </div>
+
+    <div class="contact-info">
+        <h2>Contactez-nous</h2>
+        <p><strong>Site web :</strong> www.esatic.ci</p>
+        <p><strong>Email :</strong> concours@esatic.ci</p>
+        <p><strong>Téléphone :</strong> +225 XX XX XX XX XX</p>
+        <p><strong>Adresse :</strong> Abidjan, Côte d'Ivoire</p>
+    </div>
+
+    <div class="footer">
+        <p>© 2025 ESATIC - École Supérieure Africaine des TIC</p>
+        <p>Document généré le {{ "now"|date:"d/m/Y" }}</p>
+    </div>
+</body>
+</html>

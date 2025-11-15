@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Brochure Concours Ingénieur - ESATIC</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 2cm;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .header {
+            text-align: center;
+            padding: 30px 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            margin: -2cm -2cm 2cm -2cm;
+            padding: 3cm 2cm 2cm 2cm;
+        }
+        
+        .header h1 {
+            font-size: 36px;
+            margin: 0 0 10px 0;
+        }
+        
+        .header p {
+            font-size: 18px;
+            margin: 0;
+        }
+        
+        h2 {
+            color: #667eea;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+            margin-top: 30px;
+            font-size: 24px;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+        }
+        
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        
+        ul li {
+            padding: 10px 0 10px 30px;
+            position: relative;
+        }
+        
+        ul li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #667eea;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        
+        .timeline-item {
+            padding: 15px;
+            margin: 10px 0;
+            background: #f8f9fa;
+            border-left: 4px solid #667eea;
+        }
+        
+        .timeline-date {
+            font-weight: bold;
+            color: #667eea;
+            font-size: 16px;
+        }
+        
+        .faq-item {
+            margin: 20px 0;
+            page-break-inside: avoid;
+        }
+        
+        .faq-question {
+            font-weight: bold;
+            color: #764ba2;
+            font-size: 16px;
+            margin-bottom: 8px;
+        }
+        
+        .faq-answer {
+            padding-left: 20px;
+            color: #555;
+        }
+        
+        .highlight-box {
+            background: #fff3cd;
+            border: 2px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        
+        .footer {
+            margin-top: 50px;
+            text-align: center;
+            font-size: 12px;
+            color: #666;
+            border-top: 1px solid #ddd;
+            padding-top: 20px;
+        }
+        
+        .contact-info {
+            background: #e3f2fd;
+            padding: 20px;
+            margin: 30px 0;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🎓 CONCOURS INGÉNIEUR</h1>
+        <p>École Supérieure Africaine des TIC (ESATIC)</p>
+        <p style="font-size: 16px; margin-top: 10px;">Pour les titulaires d'un BAC+2 minimum</p>
+    </div>
+
+    <div class="section">
+        <h2>À propos du concours</h2>
+        <p>Le concours d'ingénieur est destiné aux étudiants ayant validé un diplôme de niveau BAC+2 minimum (BTS, DUT, Licence 2, Classes préparatoires) souhaitant poursuivre leur formation dans une école d'ingénieur. Cette formation d'excellence prépare aux métiers de haut niveau dans le domaine des technologies de l'information et de la communication.</p>
+    </div>
+
+    <div class="section">
+        <h2>Conditions d'admission</h2>
+        <ul>
+            <li>Être titulaire d'un diplôme BAC+2 minimum dans un domaine scientifique ou technique (BTS, DUT, Licence 2, Classes préparatoires)</li>
+            <li>Avoir moins de 30 ans au 1er janvier de l'année du concours</li>
+            <li>Posséder un bon niveau en mathématiques et sciences physiques</li>
+            <li>Maîtriser le français (niveau B2 minimum pour les candidats étrangers)</li>
+            <li>Présenter un dossier académique de qualité avec de bons résultats</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Épreuves du concours</h2>
+        <ul>
+            <li><strong>Épreuves écrites :</strong> Mathématiques (4h), Physique (3h), Informatique (2h)</li>
+            <li><strong>Épreuve de langue :</strong> Anglais (2h)</li>
+            <li><strong>Épreuves orales :</strong> Entretien de motivation (30 min), Exposé technique, Analyse de documents</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Spécialités proposées</h2>
+        <ul>
+            <li>Génie Informatique : Développement logiciel, intelligence artificielle, big data</li>
+            <li>Réseaux et Télécommunications : Architecture réseau, sécurité, systèmes distribués</li>
+            <li>Systèmes Embarqués : IoT, systèmes temps réel, électronique numérique</li>
+            <li>Cybersécurité : Sécurité des systèmes d'information, cryptographie, audit</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Calendrier</h2>
+        <div class="timeline-item">
+            <div class="timeline-date">15 janvier - 15 mars</div>
+            <p>Période d'inscription au concours</p>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-date">10 - 12 avril</div>
+            <p>Épreuves écrites</p>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-date">25 avril</div>
+            <p>Publication des résultats d'admissibilité</p>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-date">15 - 25 mai</div>
+            <p>Épreuves orales</p>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-date">10 juin</div>
+            <p>Publication des résultats d'admission</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Frais d'inscription</h2>
+        <div class="highlight-box">
+            <p><strong>Tarif normal :</strong> 35 000 FCFA</p>
+            <p><strong>Tarif boursiers :</strong> 25 000 FCFA (sur présentation d'un justificatif)</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Questions fréquentes</h2>
+        
+        <div class="faq-item">
+            <div class="faq-question">Q: Puis-je m'inscrire si je suis en dernière année de BTS/DUT ?</div>
+            <div class="faq-answer">
+                R: Oui, vous pouvez vous inscrire si vous êtes en dernière année de formation. Votre admission définitive sera conditionnée à l'obtention de votre diplôme avant la rentrée universitaire.
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question">Q: Y a-t-il des quotas pour les différentes filières ?</div>
+            <div class="faq-answer">
+                R: Non, il n'y a pas de quotas prédéfinis pour les différentes filières d'origine. Tous les candidats sont évalués selon les mêmes critères quelle que soit leur formation d'origine.
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question">Q: Est-il possible d'obtenir des annales des concours précédents ?</div>
+            <div class="faq-answer">
+                R: Oui, des annales des trois dernières années sont disponibles dans la section "Ressources" de notre site internet. Vous pouvez également vous procurer un recueil complet auprès de notre secrétariat.
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question">Q: Quelle est la durée de la formation d'ingénieur ?</div>
+            <div class="faq-answer">
+                R: La formation d'ingénieur dure 3 ans (6 semestres) après un BAC+2. Elle comprend des cours théoriques, des travaux pratiques, des projets, et se termine par un stage de fin d'études en entreprise de 6 mois minimum.
+            </div>
+        </div>
+    </div>
+
+    <div class="contact-info">
+        <h2>Contactez-nous</h2>
+        <p><strong>Site web :</strong> www.esatic.ci</p>
+        <p><strong>Email :</strong> concours@esatic.ci</p>
+        <p><strong>Téléphone :</strong> +225 XX XX XX XX XX</p>
+        <p><strong>Adresse :</strong> Abidjan, Côte d'Ivoire</p>
+    </div>
+
+    <div class="footer">
+        <p>© 2025 ESATIC - École Supérieure Africaine des TIC</p>
+        <p>Document généré le {{ "now"|date:"d/m/Y" }}</p>
+    </div>
+</body>
+</html>
+        
+        .header h1 {
+            font-size: 36px;
+            margin: 0 0 10px 0;
+        }
+        
+        .header p {
+            font-size: 18px;
+            margin: 0;
+        }
+        
+        h2 {
+            color: #1e3c72;
+            border-bottom: 3px solid #2a5298;
+            padding-bottom: 10px;
+            margin-top: 30px;
+            font-size: 24px;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+        }
+        
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        
+        ul li {
+            padding: 10px 0 10px 30px;
+            position: relative;
+        }
+        
+        ul li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #2a5298;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        
+        .timeline-item {
+            padding: 15px;
+            margin: 10px 0;
+            background: #f0f4f8;
+            border-left: 4px solid #2a5298;
+        }
+        
+        .timeline-date {
+            font-weight: bold;
+            color: #1e3c72;
+            font-size: 16px;
+        }
+        
+        .faq-item {
+            margin: 20px 0;
+            page-break-inside: avoid;
+        }
+        
+        .faq-question {
+            font-weight: bold;
+            color: #1e3c72;
+            font-size: 16px;
+            margin-bottom: 8px;
+        }
+        
+        .faq-answer {
+            padding-left: 20px;
+            color: #555;
+        }
+        
+        .highlight-box {
+            background: #e3f2fd;
+            border: 2px solid #2196f3;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        
+        .footer {
+            margin-top: 50px;
+            text-align: center;
+            font-size: 12px;
+            color: #666;
+            border-top: 1px solid #ddd;
+            padding-top: 20px;
+        }
+        
+        .contact-info {
+            background: #fff9e6;
+            padding: 20px;
+            margin: 30px 0;
+            border-radius: 5px;
+            border: 2px solid #ffc107;
+        }
+        
+        .specialites-grid {
+            display: table;
+            width: 100%;
+            margin: 20px 0;
+        }
+        
+        .specialite-item {
+            display: table-row;
+            padding: 10px;
+        }
+        
+        .specialite-item div {
+            display: table-cell;
+            padding: 10px;
+            background: #f5f5f5;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🎓 CONCOURS INGÉNIEUR</h1>
+        <p>École Supérieure Africaine des TIC (ESATIC)</p>
+        <p style="font-size: 16px; margin-top: 10px;">Pour les titulaires d'un BAC+2 minimum</p>
+    </div>
+
+    <div class="section">
+        <h2>À propos du concours</h2>
+        <p>Le concours d'ingénieur est destiné aux étudiants ayant validé un diplôme de niveau BAC+2 minimum (BTS, DUT, Licence 2, Classes préparatoires) souhaitant poursuivre leur formation dans une école d'ingénieur. Cette formation d'excellence prépare aux métiers de haut niveau dans le domaine des technologies de l'information et de la communication.</p>
+    </div>
+
+    <div class="section">
+        <h2>Conditions d'admission</h2>
+        <ul>
+            <li>Être titulaire d'un diplôme BAC+2 minimum dans un domaine scientifique ou technique (BTS, DUT, Licence 2, Classes préparatoires)</li>
+            <li>Avoir moins de 30 ans au 1er janvier de l'année du concours</li>
+            <li>Posséder un bon niveau en mathématiques et sciences physiques</li>
+            <li>Maîtriser le français (niveau B2 minimum pour les candidats étrangers)</li>
+            <li>Présenter un dossier académique de qualité avec de bons résultats</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Épreuves du concours</h2>
+        <div class="highlight-box">
+            <h3 style="margin-top: 0; color: #1e3c72;">Phase écrite (Admissibilité)</h3>
+            <ul>
+                <li><strong>Mathématiques :</strong> 4 heures - Analyse, algèbre, probabilités</li>
+                <li><strong>Physique :</strong> 3 heures - Mécanique, électromagnétisme, thermodynamique</li>
+                <li><strong>Informatique :</strong> 2 heures - Algorithmique, programmation, systèmes</li>
+                <li><strong>Anglais :</strong> 2 heures - Compréhension et expression écrite technique</li>
+            </ul>
+        </div>
+        
+        <div class="highlight-box" style="background: #fff3e0; border-color: #ff9800;">
+            <h3 style="margin-top: 0; color: #1e3c72;">Phase orale (Admission)</h3>
+            <ul>
+                <li><strong>Entretien de motivation :</strong> 30 minutes avec un jury</li>
+                <li><strong>Exposé technique :</strong> Présentation d'un projet ou sujet technique</li>
+                <li><strong>Analyse de documents :</strong> Étude et synthèse de documents scientifiques</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Spécialités proposées</h2>
+        <ul>
+            <li><strong>Génie Informatique :</strong> Développement logiciel, intelligence artificielle, big data</li>
+            <li><strong>Réseaux et Télécommunications :</strong> Architecture réseau, sécurité, systèmes distribués</li>
+            <li><strong>Systèmes Embarqués :</strong> IoT, systèmes temps réel, électronique numérique</li>
+            <li><strong>Cybersécurité :</strong> Sécurité des systèmes d'information, cryptographie, audit</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Calendrier</h2>
+        <div class="timeline-item">
+            <div class="timeline-date">15 janvier - 15 mars</div>
+            <p>Période d'inscription au concours en ligne sur le portail</p>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-date">10 - 12 avril</div>
+            <p>Épreuves écrites (admissibilité)</p>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-date">25 avril</div>
+            <p>Publication des résultats d'admissibilité</p>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-date">15 - 25 mai</div>
+            <p>Épreuves orales pour les candidats admissibles</p>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-date">10 juin</div>
+            <p>Publication des résultats définitifs d'admission</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Frais d'inscription</h2>
+        <div class="highlight-box">
+            <p><strong>Tarif normal :</strong> 35 000 FCFA</p>
+            <p><strong>Tarif boursiers :</strong> 25 000 FCFA (sur présentation d'un justificatif valide)</p>
+            <p style="margin-top: 15px; font-size: 14px; color: #666;">
+                <em>Note : Les frais d'inscription ne sont pas remboursables. Ils couvrent l'organisation des épreuves et le traitement du dossier.</em>
+            </p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Questions fréquentes</h2>
+        
+        <div class="faq-item">
+            <div class="faq-question">Q: Puis-je m'inscrire si je suis en dernière année de BTS/DUT ?</div>
+            <div class="faq-answer">
+                R: Oui, vous pouvez vous inscrire si vous êtes en dernière année de formation. Votre admission définitive sera conditionnée à l'obtention de votre diplôme avant la rentrée universitaire. Vous devrez fournir une attestation de votre établissement confirmant votre inscription en dernière année.
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question">Q: Y a-t-il des quotas pour les différentes filières ?</div>
+            <div class="faq-answer">
+                R: Non, il n'y a pas de quotas prédéfinis pour les différentes filières d'origine. Tous les candidats sont évalués selon les mêmes critères quelle que soit leur formation d'origine. Le recrutement se fait uniquement sur le mérite et les compétences démontrées lors des épreuves.
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question">Q: Est-il possible d'obtenir des annales des concours précédents ?</div>
+            <div class="faq-answer">
+                R: Oui, des annales des trois dernières années sont disponibles dans la section "Ressources" de notre site internet. Vous pouvez également vous procurer un recueil complet auprès de notre secrétariat. Ces annales vous permettront de vous familiariser avec le format et le niveau des épreuves.
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question">Q: Quelle est la durée de la formation d'ingénieur ?</div>
+            <div class="faq-answer">
+                R: La formation d'ingénieur dure 3 ans (6 semestres) après un BAC+2. Elle comprend des cours théoriques, des travaux pratiques, des projets, et se termine par un stage de fin d'études en entreprise de 6 mois minimum.
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Débouchés professionnels</h2>
+        <p>Nos diplômés occupent des postes à responsabilité dans :</p>
+        <ul>
+            <li>Sociétés de services numériques (SSII, ESN)</li>
+            <li>Grandes entreprises internationales (télécoms, banques, industries)</li>
+            <li>Startups technologiques et innovation</li>
+            <li>Cabinets de conseil en systèmes d'information</li>
+            <li>Organismes publics et administrations</li>
+        </ul>
+    </div>
+
+    <div class="contact-info">
+        <h2 style="color: #1e3c72;">Contactez-nous</h2>
+        <p><strong>Site web :</strong> www.esatic.ci</p>
+        <p><strong>Email :</strong> concours@esatic.ci</p>
+        <p><strong>Téléphone :</strong> +225 XX XX XX XX XX</p>
+        <p><strong>Adresse :</strong> Abidjan, Côte d'Ivoire</p>
+        <p style="margin-top: 15px;"><strong>Horaires d'ouverture :</strong> Lundi - Vendredi : 8h00 - 17h00</p>
+    </div>
+
+    <div class="footer">
+        <p style="font-weight: bold; color: #1e3c72; margin-bottom: 10px;">© 2025 ESATIC - École Supérieure Africaine des TIC</p>
+        <p>Document généré le {{ "now"|date:"d/m/Y" }}</p>
+        <p style="margin-top: 10px; font-style: italic;">"Former les ingénieurs de demain dans le domaine des TIC"</p>
+    </div>
+</body>
+</html>
